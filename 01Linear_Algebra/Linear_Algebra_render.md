@@ -1,7 +1,10 @@
+---
+layout: page
+mathjax: true
+
+---
+
 ### Linear Algebra
-
-
-------
 
 #### What is a vector?
   * Imagine we have a two dimensional space composed of x and y axis, and their intersection called origin (0).
