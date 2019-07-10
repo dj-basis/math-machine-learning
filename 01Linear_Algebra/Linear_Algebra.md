@@ -35,8 +35,8 @@ mathjax: true
     * $det(A)= ad-bc$
  * Geometrically
       * $det(A)$:the area scaling factor of the linear transformation
-      * $\left|det(A)\right| > 1$, increase the area by a factor of 5
-      * 0< $\left|det(A)\right| < 1$: squish down area
+      * $\lvert det(A) \rvert > 1$, increase the area by a factor of 5
+      * 0< $\lvert det(A) \rvert < 1$: squish down area
       * Zero dterminant: when $det(A) =0$, the transformation squishes down the area to a line or a point
       * $det(A) < 0$:  the orientation of space is inverted (space is inverted. The basis vector $\vec{i}$ is now on the left side of $\vec{j}$)
 
