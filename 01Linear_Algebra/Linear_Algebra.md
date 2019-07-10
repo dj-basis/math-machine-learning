@@ -8,6 +8,7 @@ mathjax: true
 
 ### Table of Contents
 - [Vector](#vector)
+- [Determinant](#determinant)
 - [Dot products](#dot-products)
 - [Cross products](#cross-products)
 - [Matrix](#matrix)
@@ -22,6 +23,33 @@ mathjax: true
   * To differentiate vectors from points, the convention is to write these two numbers vertically in a square bracket.
   * Every pair of numbers is associated with one and only one vector, vice versa
   * [Vectors, what even are they? 3'- 4'](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
+<br>
+
+### Determinant
+#### 2-D
+  * A = $\begin{bmatrix}a&b \\\c&d \end{bmatrix}$
+  * Determinant of A: det(A)
+  * Numerically
+    * a scalar value that can be computed from the elements of a square matrix and measures the scaling of linear transformation described by the matrix
+    * det(A) = ad-bc
+ * Geometrically
+      * det(A):the area scaling factor of the linear transformation
+      * |det(A)| > 1, increase the area by a factor of 5
+      * 0< |det(A)| < 1: squish down area
+      * Zero dterminant: when det(A) =0, the transformation squishes down the area to a line or a point
+      * det(A) < 0:  the orientation of space is inverted (space is inverted. The basis vector $\vec{i}$ is now on the left side of $\vec{j}$)
+
+#### 3-D
+  * B = $\begin{bmatrix}u_1&v_1&w_1 \\\u_2&v_2&w_2  \\\u_3&v_3&w_3 \end{bmatrix}$
+  * Numerically:
+    * det(B): the volume scaling factor of the linear transformation described by the matrix
+    * det(B) = $u_1(v2w3-w2v3)-v_1(u_2w_3-w_2u_3)+w_1(u_2v_3-v_2u_3)$
+  * Geometrically  
+    * det(B) < 0: Right finger rule no longer fits
+        * index finger: points to the direction of $\vec{i}$
+        * middle finger: points to the direction of $\vec{j}$
+        * thumb: points to the direction of $\vec{k}$
 
 <br>
 
@@ -76,9 +104,9 @@ mathjax: true
    * The positive area of the parallelogram having $\vec{v}$ and $\vec{w}$ as sides
    * The length of $\vec{p}$ = the area of parallelogram defined by $\vec{v}$ and  $\vec{w}$
    * The direction of $\vec{p}$ is defined using the Right Hand Rule
-      * index finger: point to the direction of $\vec{v}$
-      * middle finger: point to the direction of $\vec{w}$
-      * the direction of thumb: points to the direction of $\vec{p}$
+      * index finger: points to the direction of $\vec{v}$
+      * middle finger: points to the direction of $\vec{w}$
+      * thumb: points to the direction of $\vec{p}$
 
 ![cross product projection](../src/image/crossproduct.png)  
 
@@ -91,6 +119,7 @@ mathjax: true
 #### How is matrix useful?
  * Computer space
  * Solve system equations: Linear system
+
 #### Matrix multiplication
  * Right to left (die Rechts-vor-links-Regel)
 
@@ -98,8 +127,6 @@ mathjax: true
 
 ### Glossary
  * Column space: all the linear combinations of the column vectors [Video by Sal Khan](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/column-space-of-a-matrix)
- * Determinant:
-   * Geometrically: the determinant of matrix A, det(A), it can be viewed as the volume scaling factor of the linear transformation described by the matrix
  * Identity transformation: the transformation that does nothing
  * Gaussian elimination
  * Inverse matrices: the inverse transformation in geometry (clockwise-counterclockwise, rightward shear -- leftward shear)
@@ -112,7 +139,8 @@ mathjax: true
  <br>
 
 ---
- ### References
+
+### References
   * [Cross product introduction](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/linear-algebra-cross-product-introduction)
 
   * [Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
