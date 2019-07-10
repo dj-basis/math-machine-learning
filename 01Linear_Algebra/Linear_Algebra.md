@@ -4,10 +4,6 @@ mathjax: true
 
 ---
 
-### Linear Algebra
-
-------
-
 #### What is a vector?
   * Imagine we have a two dimensional space composed of x and y axis, and their intersection called origin (0).
   * $\begin{bmatrix}1 \\\2 \end{bmatrix}$ : The coordinate of a vector is a pair of numbers which gives instructions to tell the vector how to get from the origin of the vector to the tip of the vector.
