@@ -1,5 +1,10 @@
-### Linear Algebra
+---
+layout: page
+mathjax: true
 
+---
+
+### Linear Algebra
 
 ------
 
@@ -10,7 +15,7 @@
   * After that, the second number tells you how far to walk parallel to the y-axis
   * To differentiate vectors from points, the convention is to write these two numbers vertically in a square bracket.
   * Every pair of numbers is associated with one and only one vector, vice versa
-  * [[Vectors, what even are they? 3'- 4'](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+  * [Vectors, what even are they? 3'- 4'](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 <br>
 
@@ -21,11 +26,10 @@
 
 #### Dot products
  * Two vectors of the same dimension
-   *  $\vec{v}$ =  $\begin{bmatrix}1 \\\2 \end{bmatrix}$
+   * $\vec{v}$ =  $\begin{bmatrix}1 \\\2 \end{bmatrix}$
    * $\vec{w}$  = $\begin{bmatrix}3 \\\4 \end{bmatrix}$
  * Numerically
    * Pair the coordinates of multiply them together and add the result
-
    * $\begin{bmatrix}1 \\\2 \end{bmatrix}$ $\cdot$  $\begin{bmatrix}3 \\\4 \end{bmatrix}$ =  1 $\cdot$  3+ 2 $\cdot$ 4= 11
 
  * Geometrically
@@ -35,6 +39,7 @@
      *  $\vec{v}$ $\cdot$ $\vec{w}$> 0: vectors are pointing to similar directions
      *  $\vec{v}$ $\cdot$ $\vec{w}$> 0: vectors are pointing to opposing direction
      * $\vec{v}$ $\cdot$ $\vec{w}$ = 0: vectors are perpendicular
+
 
 ![dot product projection](../src/image/dotproduct.png)
 
@@ -48,7 +53,6 @@
  * Column space: all the linear combinations of the column vectors [Video by Sal Khan](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/column-space-of-a-matrix)
  * Determinant:
    * Geometrically: the determinant of matrix A, det(A), it can be viewed as the volume scaling factor of the linear transformation described by the matrix
-   * 
  * Identity transformation: the transformation that does nothing
  * Gaussian elimination
  * Inverse matrices: the inverse transformation in geometry (clockwise-counterclockwise, rightward shear -- leftward shear)
