@@ -28,25 +28,25 @@ mathjax: true
 
 ### Determinant
 #### 2-D
-  * A = $\begin{bmatrix}a&b \\\c&d \end{bmatrix}$
-  * Determinant of A: det(A)
+  * $A = \begin{bmatrix}a&b \\\c&d \end{bmatrix}$
+  * Determinant of $A$: $det(A)$
   * Numerically
     * a scalar value that can be computed from the elements of a square matrix and measures the scaling of linear transformation described by the matrix
-    * det(A) = ad-bc
+    * $det(A)= ad-bc$
  * Geometrically
-      * det(A):the area scaling factor of the linear transformation
-      * |det(A)| > 1, increase the area by a factor of 5
-      * 0< |det(A)| < 1: squish down area
-      * Zero dterminant: when det(A) =0, the transformation squishes down the area to a line or a point
-      * det(A) < 0:  the orientation of space is inverted (space is inverted. The basis vector $\vec{i}$ is now on the left side of $\vec{j}$)
+      * $det(A)$:the area scaling factor of the linear transformation
+      * $\left|det(A)\right| > 1$, increase the area by a factor of 5
+      * 0< $\left|det(A)\right| < 1$: squish down area
+      * Zero dterminant: when $det(A) =0$, the transformation squishes down the area to a line or a point
+      * $det(A) < 0$:  the orientation of space is inverted (space is inverted. The basis vector $\vec{i}$ is now on the left side of $\vec{j}$)
 
 #### 3-D
-  * B = $\begin{bmatrix}u_1&v_1&w_1 \\\u_2&v_2&w_2  \\\u_3&v_3&w_3 \end{bmatrix}$
+  * $B = \begin{bmatrix}u_1&v_1&w_1 \\\u_2&v_2&w_2  \\\u_3&v_3&w_3 \end{bmatrix}$
   * Numerically:
-    * det(B): the volume scaling factor of the linear transformation described by the matrix
-    * det(B) = $u_1(v2w3-w2v3)-v_1(u_2w_3-w_2u_3)+w_1(u_2v_3-v_2u_3)$
+    * $det(B)$: the volume scaling factor of the linear transformation described by the matrix
+    * $det(B) = u_1(v2w3-w2v3)-v_1(u_2w_3-w_2u_3)+w_1(u_2v_3-v_2u_3)$
   * Geometrically  
-    * det(B) < 0: Right finger rule no longer fits
+    * $det(B) < 0$: Right finger rule no longer fits
         * index finger: points to the direction of $\vec{i}$
         * middle finger: points to the direction of $\vec{j}$
         * thumb: points to the direction of $\vec{k}$
@@ -61,7 +61,7 @@ mathjax: true
  * Order: doesn't matter
  * Numerically
    * Pair the coordinates of multiply them together and add the result
-   * $\begin{bmatrix}1 \\\2 \end{bmatrix}$ $\cdot$  $\begin{bmatrix}3 \\\4 \end{bmatrix}$ =  1 $\cdot$  3+ 2 $\cdot$ 4= 11
+   * $\begin{bmatrix}1 \\\2 \end{bmatrix}$ $\cdot$  $\begin{bmatrix}3 \\\4 \end{bmatrix}$ =  1 $\cdot$  3+ 2 $\cdot$ 4 = 11
 
  * Geometrically
    * Project $\vec{w}$ onto the line passing through the origin on the tip of $\vec{v}$  
@@ -73,9 +73,9 @@ mathjax: true
 
  * Duality: natural-but-surprising correspondence
    * Matrix vector product:  
-     [$u_x$ $u_y$] $\begin{bmatrix}x \\\y \end{bmatrix}$ = $u_x$ $\cdot$ x + $u_y$ $\cdot$ y
+     [$u_x$ $u_y$] $\begin{bmatrix}x \\\y \end{bmatrix}$ = $u_x$ $\cdot$ $x$ + $u_y$ $\cdot$ $y$
    * Dot product:   
-     $\begin{bmatrix}u_x \\\u_y \end{bmatrix}$ $\cdot$ $\begin{bmatrix}x \\\y \end{bmatrix}$ = $u_x$ $\cdot$ x + $u_y$ $\cdot$ y
+     $\begin{bmatrix}u_x \\\u_y \end{bmatrix}$ $\cdot$ $\begin{bmatrix}x \\\y \end{bmatrix}$ = $u_x$ $\cdot$ $x$ + $u_y$ $\cdot$ $y$
 
 ![dot product projection](../src/image/dotproduct.png)  
 
