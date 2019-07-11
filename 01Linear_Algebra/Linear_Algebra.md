@@ -131,9 +131,9 @@ $\frac{e-ax}{b}=\frac{f-cx}{a}$;  $x = \frac{ed-bf}{ad-bc}$
  * Matrix Equation   
 $\begin{bmatrix}a&b \\\c&d \end{bmatrix} \begin{bmatrix}x \\\y \end{bmatrix} =  \begin{bmatrix}e \\\f \end{bmatrix}$   
 
-$x = \frac { \begin{array}{|cc|} e&b\\f&d\end{array} } { {\begin{array}{|cc|} a&b\\c&d\end{array} } }$
+$x = \frac { \begin{array}{\| cc \|} e&b\\ f&d\end{array} } { {\begin{array}{\|cc\|} a&b\\c&d\end{array} } }$
 
-$y = \frac { \begin{array}{|cc|} a&e\\c&f\end{array} } { {\begin{array}{|cc|} a&b\\c&d\end{array} } }$
+$y = \frac { \begin{array}{\|cc\|} a&e\\c&f\end{array} } { {\begin{array}{\|cc\|} a&b\\c&d\end{array} } }$
 
 <br>
 
