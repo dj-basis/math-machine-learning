@@ -11,6 +11,7 @@ mathjax: true
 - [Determinant](#determinant)
 - [Dot products](#dot-products)
 - [Cross products](#cross-products)
+- [Cramer's rule](#cramer-rule)
 - [Matrix](#matrix)
 - [Glossary](#glossary)
 
@@ -112,6 +113,27 @@ mathjax: true
 
 [Screenshot at 6:03 in video](https://www.youtube.com/watch?v=eu6i7WJeinw&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=10)
 
+
+<br>
+
+### Cramer's rule
+* Cramer's rule expresses the solution in terms of the determinants of the (square) coefficient matrix and of matrices obtained from it by replacing one column by the column vector of right-hand-sides of the equations. It is named after Gabriel Cramer  
+* Consider a system of linear equation  
+
+$ax + by =e$  
+$cx+dy=f$
+
+
+$\frac{e-ax}{b}=\frac{f-cx}{a}$;  $x = \frac{ed-bf}{ad-bc}$  
+
+ $\frac {e-by} {a} = \frac{f-dy}{c}$;  $y = \frac{af-ec} {ad=bc}$
+
+ * Matrix Equation   
+$\begin{bmatrix}a&b \\\c&d \end{bmatrix} \begin{bmatrix}x \\\y \end{bmatrix} =  \begin{bmatrix}e \\\f \end{bmatrix}$   
+
+$x = \frac { \begin{array}{|cc|} e&b\\f&d\end{array} } { {\begin{array}{|cc|} a&b\\c&d\end{array} } }$
+
+$y = \frac { \begin{array}{|cc|} a&e\\c&f\end{array} } { {\begin{array}{|cc|} a&b\\c&d\end{array} } }$
 
 <br>
 
