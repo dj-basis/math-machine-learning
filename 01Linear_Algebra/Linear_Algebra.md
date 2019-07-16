@@ -120,7 +120,7 @@ mathjax: true
 
 ### Cramer's rule
 * Cramer's rule expresses the solution in terms of the determinants of the (square) coefficient matrix and of matrices obtained from it by replacing one column by the column vector of right-hand-sides of the equations. It is named after Gabriel Cramer  
- * #####Consider a system of linear equation  
+ * **Consider a system of linear equation**
 
  - $ax + by =e$  
 $cx+dy=f$
@@ -159,7 +159,7 @@ $cx+dy=f$
  * Eigenvalue: The factor by which the eigengectors is stretched or squished
  * e.g. Matrix $A = \begin{bmatrix}3&1 \\\0&2 \end{bmatrix}$
  Eigenvector $\vec{v}$ =  $\begin{bmatrix}-1 \\\1 \end{bmatrix}$, eigenvalue of $\vec{v}$ is 2
-
+  
  * ![eigen](../src/image/eigen.png)
 [Eigenvector 3:39](https://www.youtube.com/watch?v=PFDu9oVAE-g&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=14)
 
@@ -177,7 +177,7 @@ $cx+dy=f$
    - $I = \begin{bmatrix}1 &0 \\\0&1 \end{bmatrix}$, the identity matrix with ones in the diagonal
  multiplication on both sides
    - $(A-\lambda I)\vec{v} = 0$
-   - For non-zero $\vec{v}$, the transformation associated with the matrix has to be squished down to a lower dimension, squishification, which corresponds to a zero determinant of the matrix $det(A-\lambda I) = 0$
+   - For non-zero $\vec{v}$, the transformation associated with the matrix has to be squished down to a lower dimension (squishification), which corresponds to a zero determinant of the matrix $det(A-\lambda I) = 0$
    - e.g.
      * For matrix $A = \begin{bmatrix}3&1 \\\0&2 \end{bmatrix}$
      * $\biggl(\begin{bmatrix}3&1 \\\0&2 \end{bmatrix} - \lambda\begin{bmatrix}1 &0 \\\0&1 \end{bmatrix}\biggr)\vec{v}=0$
