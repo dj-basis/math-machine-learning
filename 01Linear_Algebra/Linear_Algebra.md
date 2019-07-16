@@ -13,6 +13,8 @@ mathjax: true
 - [Cross products](#cross-products)
 - [Cramer's rule](#cramer-rule)
 - [Matrix](#matrix)
+- [Change of basis](#basis)
+- [Eigenvectors and eigenvalues](#eigen)
 - [Glossary](#glossary)
 
 
@@ -118,22 +120,23 @@ mathjax: true
 
 ### Cramer's rule
 * Cramer's rule expresses the solution in terms of the determinants of the (square) coefficient matrix and of matrices obtained from it by replacing one column by the column vector of right-hand-sides of the equations. It is named after Gabriel Cramer  
-* Consider a system of linear equation  
+ * #####Consider a system of linear equation  
 
-$ax + by =e$  
+ - $ax + by =e$  
 $cx+dy=f$
 
 
-$\frac{e-ax}{b}=\frac{f-cx}{a}$;  $x = \frac{ed-bf}{ad-bc}$  
+ - $\frac{e-ax}{b}=\frac{f-cx}{a}$;  $x = \frac{ed-bf}{ad-bc}$  
 
- $\frac {e-by} {a} = \frac{f-dy}{c}$;  $y = \frac{af-ec} {ad=bc}$
+ - $\frac {e-by} {a} = \frac{f-dy}{c}$;  $y = \frac{af-ec} {ad=bc}$
 
- * Matrix Equation   
-$\begin{bmatrix}a&b \\\c&d \end{bmatrix} \begin{bmatrix}x \\\y \end{bmatrix} =  \begin{bmatrix}e \\\f \end{bmatrix}$   
+ * ##### Matrix Equation
 
-$x = \frac { \begin{array}{\| cc \|} e&b\\\ f&d\end{array} } { {\begin{array}{\|cc\|} a&b\\\c&d\end{array} } }$
+  - $\begin{bmatrix}a&b \\\c&d \end{bmatrix} \begin{bmatrix}x \\\y \end{bmatrix} =  \begin{bmatrix}e \\\f \end{bmatrix}$   
 
-$y = \frac { \begin{array}{\|cc\|} a&e\\\c&f\end{array} } { {\begin{array}{\|cc\|} a&b\\\c&d\end{array} } }$
+  - $x = \frac { \begin{array}{\| cc \|} e&b\\\ f&d\end{array} } { {\begin{array}{\|cc\|} a&b\\\c&d\end{array} } }$
+
+  - $y = \frac { \begin{array}{\|cc\|} a&e\\\c&f\end{array} } { {\begin{array}{\|cc\|} a&b\\\c&d\end{array} } }$
 
 <br>
 
@@ -147,6 +150,54 @@ $y = \frac { \begin{array}{\|cc\|} a&e\\\c&f\end{array} } { {\begin{array}{\|cc\
 
 <br>
 
+### Change of basis
+
+<br>
+
+### Eigenvectors and eigenvalues
+ * Eigenvector: a vector that stays on its own span (the line passing through the origin and the tip of the vector) during a matrix transformation, unlike other vectors that are knocked off their spans during transformation
+ * Eigenvalue: The factor by which the eigengectors is stretched or squished
+ * e.g. Matrix $A = \begin{bmatrix}3&1 \\\0&2 \end{bmatrix}$
+ Eigenvector $\vec{v}$ =  $\begin{bmatrix}-1 \\\1 \end{bmatrix}$, eigenvalue of $\vec{v}$ is 2
+
+ * ![eigen](../src/image/eigen.png)
+[Eigenvector 3:39](https://www.youtube.com/watch?v=PFDu9oVAE-g&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=14)
+
+ * The axis of a 3-D rotation: the span of an eigenvector, with eigenvalue equal to 1 (no stretching or squishing during rotation)
+
+ * Eigenbasis: a set of basis vectors which are also eigenvectors
+   - useful for matrix operations,
+   - e.g. To calculate $\begin{bmatrix}3&1 \\\0&2 \end{bmatrix}^{100}$, change the basis vector to eigenbasis system $\begin{bmatrix}1&-1 \\\0&1 \end{bmatrix}$
+   - $\begin{bmatrix}1&-1 \\\0&1 \end{bmatrix}^{-1}$ $\begin{bmatrix}3&1 \\\0&2 \end{bmatrix}$ $\begin{bmatrix}1&-1 \\\0&1 \end{bmatrix}$ = $\begin{bmatrix}3&0 \\\0&2 \end{bmatrix}$
+
+ * How to calculate the eigenvalue of a matrix?
+   - Matrix-vector multiplication $A\vec{v} = \lambda\vec{v}$ Scalar multiplication
+   - Change the scalar multiplication to matrix multiplication ($I\vec{v}$) scaled by a factor $\lambda$
+   - $A\vec{v} = \lambda I \vec{v}$; matrix-vector
+   - $I = \begin{bmatrix}1 &0 \\\0&1 \end{bmatrix}$, the identity matrix with ones in the diagonal
+ multiplication on both sides
+   - $(A-\lambda I)\vec{v} = 0$
+   - For non-zero $\vec{v}$, the transformation associated with the matrix has to be squished down to a lower dimension, squishification, which corresponds to a zero determinant of the matrix $det(A-\lambda I) = 0$
+   - e.g.
+     * For matrix $A = \begin{bmatrix}3&1 \\\0&2 \end{bmatrix}$
+     * $\biggl(\begin{bmatrix}3&1 \\\0&2 \end{bmatrix} - \lambda\begin{bmatrix}1 &0 \\\0&1 \end{bmatrix}\biggr)\vec{v}=0$
+
+     * $det \biggl(\begin{bmatrix}{3-\lambda}&1 \\\0&{2-\lambda } \end{bmatrix}\biggr) = 0$
+     * $(3-\lambda)(2-\lambda)=0$
+     * $\lambda$ can only be an eigenvalue, therefore, $\lambda=2$ or $\lambda=3$, which are the eigenvectors of matrix $A$    
+
+<br>
+
+### Questions
+ * What does a determinant of 0 mean for a matrix transformation?
+   - $det(A)=0$
+   - The matrix is squished down to a lower dimension
+ * What kind of matrix have no eigenvalues?   
+   - Non-square matrix
+   - A skew-symmetric matrix (or anti-symmetric matrix) where $A^T=-A$
+
+   <br>
+
 ### Glossary
  * Column space: all the linear combinations of the column vectors [Video by Sal Khan](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/column-space-of-a-matrix)
  * Identity transformation: the transformation that does nothing
@@ -157,6 +208,8 @@ $y = \frac { \begin{array}{\|cc\|} a&e\\\c&f\end{array} } { {\begin{array}{\|cc\
  * Null space (kernel): the space of all vectors becoming null  
  * Row echelon form
  * Span: the set of all linear combinations of two vectors.  
+ * Symmetric matrix: $A^T=A$
+ * Skew-symmetric matrix $A^T=-A$
 
  <br>
 
@@ -166,3 +219,6 @@ $y = \frac { \begin{array}{\|cc\|} a&e\\\c&f\end{array} } { {\begin{array}{\|cc\
   * [Cross product introduction](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/linear-algebra-cross-product-introduction)
 
   * [Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+  * [MIT Eigen](https://math.mit.edu/~gs/linearalgebra/ila0601.pdf)
+  * [Eigenvalues and Eigenvectors](http://www.math.harvard.edu/archive/20_spring_05/handouts/ch05_notes.pdf)
+  * [KSmith-EigenValues](http://www.math.lsa.umich.edu/~kesmith/EigenValues.pdf)
