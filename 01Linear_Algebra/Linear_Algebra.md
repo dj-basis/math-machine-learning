@@ -6,7 +6,7 @@ mathjax: true
 
 <br>
 
-### Table of Contents
+## Table of Contents
 - [1. Vector](#vector)
 - [2. Determinant](#determinant)
 - [3. Dot products](#dot-products)
@@ -23,7 +23,7 @@ mathjax: true
 - [14. References](#references)
 
 
-### 1. Vector
+## 1. Vector
   * Imagine we have a two dimensional space composed of x and y axis, and their intersection called origin (0).
   * $\begin{bmatrix}1 \\\2 \end{bmatrix}$ : The coordinate of a vector is a pair of numbers which gives instructions to tell the vector how to get from the origin of the vector to the tip of the vector.
   * The first number tells you how far to walk on the x-axis
@@ -34,8 +34,8 @@ mathjax: true
 
 <br>
 
-### 2. Determinant
-#### 2-D
+## 2. Determinant
+### 2-D
   * $A = \begin{bmatrix}a&b \\\c&d \end{bmatrix}$
   * Determinant of $A$: $det(A)$
   * Numerically
@@ -48,7 +48,7 @@ mathjax: true
       * Zero determinant: when $det(A) =0$, the transformation squishes down the area to a line or a point
       * $det(A) < 0$:  the orientation of space is inverted (space is inverted. The basis vector $\vec{i}$ is now on the left side of $\vec{j}$)
 
-#### 3-D
+### 3-D
   * $B = \begin{bmatrix}u_1&v_1&w_1 \\\u_2&v_2&w_2  \\\u_3&v_3&w_3 \end{bmatrix}$
   * Numerically:
     * $det(B)$: the volume scaling factor of the linear transformation described by the matrix
@@ -61,7 +61,7 @@ mathjax: true
 
 <br>
 
-### 3. Dot products
+## 3. Dot products
  * Two vectors of the same dimension
    * $\vec{v}$ =  $\begin{bmatrix}1 \\\2 \end{bmatrix}$
 
@@ -90,7 +90,7 @@ mathjax: true
 [Screenshot at 2:19 in video](https://www.youtube.com/watch?v=LyGKycYT2v0&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=9)
 <br>
 
-### 4. Cross products
+## 4. Cross products
  * The standard basis vectors $\vec{i}$, $\vec{j}$, and $\vec{k}$
  * Two vectors of the same dimension
    * $\vec{v}$ =  $\begin{bmatrix}v_1 \\\v_2\\\v_3 \end{bmatrix}$
@@ -123,7 +123,7 @@ mathjax: true
 
 <br>
 
-### 5. Cramer's rule
+## 5. Cramer's rule
 * Cramer's rule expresses the solution in terms of the determinants of the (square) coefficient matrix and of matrices obtained from it by replacing one column by the column vector of right-hand-sides of the equations. It is named after Gabriel Cramer  
  * **Consider a system of linear equation**
 
@@ -143,27 +143,27 @@ $cx+dy=f$
 
 <br>
 
-### 6. Linear transformations
-#### What is linear transformation?
+## 6. Linear transformations
+### What is linear transformation?
   - A function that takes an input vector and generates an output vector
   - The word 'transformation' suggests that we think using movement
   - The word 'Linear' suggests all spatial grid lines (for visualizing the coordinate system) must remain parallel and evenly spaced (not curvy), and the origin remains fixed  (not moving).
 
-#### What is a shear matrix?
+### What is a shear matrix?
 A shear matrix is an elementary matrix that represents the addition of a multiple of one row or column to another.
   - $\begin{bmatrix}1&s \\\0&1 \end{bmatrix}$
   - $\begin{bmatrix}1&0 \\\s&1 \end{bmatrix}$
 
 <br>
 
-#### How is matrix useful?
+### How is matrix useful?
  * Computer graphics
  * Robotics: e.g. rotation  
  * Solve system equations: Linear system
 
 <br>
 
-### 7. Matrix vector multiplication
+## 7. Matrix vector multiplication
  * Numerically:
    - $\begin{bmatrix}a&b \\\c&d \end{bmatrix} \begin{bmatrix}x \\\y \end{bmatrix} =  x\begin{bmatrix}a \\\c \end{bmatrix} + y\begin{bmatrix}b \\\d \end{bmatrix} = \begin{bmatrix}{ax+by} \\\ {cx+dy} \end{bmatrix}$  
  * Geometrically: apply a transformation to a vector
@@ -174,7 +174,7 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
 
 <br>
 
-### 8. Matrix multiplication
+## 8. Matrix multiplication
  * Numerically: Right to left
    - $\begin{bmatrix}a&b \\\c&d \end{bmatrix}\begin{bmatrix}e&f \\\g&h \end{bmatrix} =\begin{bmatrix}{ae+bg}&{af+bh} \\\ {ce+dg}&{cf+dh}\end{bmatrix}$
    - Step1: $\begin{bmatrix}a&b \\\c&d \end{bmatrix}\begin{bmatrix}e \\\g \end{bmatrix} =  e\begin{bmatrix}a \\\c \end{bmatrix} + g\begin{bmatrix}b \\\d \end{bmatrix} = \begin{bmatrix}{ae+bg} \\\ {ce+dg} \end{bmatrix}$
@@ -187,17 +187,17 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
 
 <br>
 
-### 9. Change of basis
+## 9. Change of basis
  * Translate between two coordinate systems
- * An inverse transformation $A_{-1}$ means: reverse the transformation
- *  $A^{-1}MA$
-   - $M$: a transformation in coordinate system P
-   - $A^{-1}$ and $A$: mathematical sort of empathy
-   - $A^{-1}MA$: mathematical product in coordinate system Q
+ * An inverse transformation $A^{-1}$ means: reverse the transformation
+ * $A^{-1}MA$
+    - $M$: a transformation in coordinate system P
+    - $A^{-1}$ and $A$: mathematical sort of empathy
+    - $A^{-1}MA$: mathematical product in coordinate system Q
 
 <br>
 
-### 10. Eigenvectors and eigenvalues
+## 10. Eigenvectors and eigenvalues
  * Eigenvector: a vector that stays on its own span (the line passing through the origin and the tip of the vector) during a matrix transformation, unlike other vectors that are knocked off their spans during transformation
  * Eigenvalue: The factor by which the eigengectors is stretched or squished
  * e.g. Matrix $A = \begin{bmatrix}3&1 \\\0&2 \end{bmatrix}$
@@ -230,13 +230,13 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
 
 <br>
 
-### 11. Abstract vector spaces
- * Functions: a type of vectors
+## 11. Abstract vector spaces
+ * Function: a type of vectors
 
 
 <br>
 
-### 12. Questions
+## 12. Questions
  * What does a determinant of 0 mean for a matrix transformation?
    - $det(A)=0$
    - The matrix is squished down to a lower dimension
@@ -256,7 +256,7 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
 
    <br>
 
-### 13. Glossary
+## 13. Glossary
  * Column space: all the linear combinations of the column vectors [Video by Sal Khan](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/null-column-space/v/column-space-of-a-matrix)
  * Identity transformation: the transformation that does nothing
  * Gaussian elimination
@@ -273,9 +273,8 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
 
 ---
 
-### 14. References
+## 14. References
   * [Cross product introduction](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/linear-algebra-cross-product-introduction)
-
   * [Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   * [MIT Eigen](https://math.mit.edu/~gs/linearalgebra/ila0601.pdf)
   * [Eigenvalues and Eigenvectors](http://www.math.harvard.edu/archive/20_spring_05/handouts/ch05_notes.pdf)
