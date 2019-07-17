@@ -262,7 +262,7 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
  * Gaussian elimination
  * Inverse matrices: the inverse transformation in geometry (clockwise-counterclockwise, rightward shear -- leftward shear)
  $A^{-1}*A^1=\begin{bmatrix}0&1 \\\1&0 \end{bmatrix}$
- * Rank: the number of dimensions in the output of a transformation (e.g. Rank 2: All vectors after a transformation land on a 2-D plain)
+ * Rank: the number of dimensions in the output of a transformation (e.g. Rank 2: All vectors after a transformation land on a 2-D plane)
  * Null space (kernel): the space of all vectors becoming null  
  * Row echelon form
  * Span: the set of all linear combinations of two vectors.  
