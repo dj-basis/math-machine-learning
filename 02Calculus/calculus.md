@@ -7,12 +7,22 @@ mathjax: true
 <br>
 
 ## Table of Contents
- - [Derivatives and Integrals](#derivatives)
+ - [Calculus](#calculus)
+ - [Derivatives and integrals](#derivatives)
+ - [The paradox of the derivative](#paradox)
  - [Chain rule and product rule](#chain)
+ - [Derivatives of exponentials](#exponentials)
 
 <br>
 
-## Derivatives and Integrals
+## Calculus
+
+  ![Fathers of calculus](../src/image/fathers-calculus.png)  
+  [Fathers of calculus, 1:05](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)
+
+<br>
+
+## Derivatives and integrals
 How to calculate the area of a circle?  
  * The area of a circle can be approximated to the aggregated areas of many rectangles ($2\pi rdr$, perimeter $2\pi r$ as the length*width $dr$)
 
@@ -21,13 +31,31 @@ How to calculate the area of a circle?
 
 <br>
 
+## The paradox of the derivative
+  - Derivative: to calculate the derivative at one time point (e.g. velocity), we actually need two time points (to calculate $\frac{Distance Change}{TimeChange}$)
+  - ![Derivative](../src/image/derivative.png)
+[Derivative, 8:16](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)  
+
+<br>
+
+  - Make the time point interval $\to 0
+  - The derivative as an instaneous rate of change = The best constant approximation of the rate of change
+  - The slope of the line tangent to the point at t $\to$
+  - ![Example](../src/image/derivative-example.png)  
+[Derivative example, 12:30](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)
+
+<br>
+
 ## Chain rule and product rule
- - For Sum rule: The derivative of a sum is the sum of derivatives
+### 1) Sum rule: The derivative of a sum is the sum of derivatives
    * $\frac{d}{dx}(g(x)+h(x)) = \frac{dg}{dx} + \frac{dh}{dx}$
    * e.g. $\frac{d}{dx}(sin(x)+x^2 = cos(x) + 2x$
    * ![Sum rule](../src/image/sum-rule.png)
 [Sum rule, 3:05](https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4)
- - Product rule: try to use area for visualization
+
+<br>
+
+### 2) Product rule: try to use an area for visualization
    * Numerically: Left d(Right) + Right d(Left)
    * $f(x) = g(x)h(x)$
    * $df = g(x)dh + h(x)dg$
@@ -35,7 +63,29 @@ How to calculate the area of a circle?
 
    * ![Product rule](../src/image/product-rule.png)
    [Product rule, 7:20](https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4)
- - Function composition
+
+<br>
+
+### 3) Function composition
    * Chain Rule: $\frac{d}{dx}g(h(x)) = \frac{dg}{dg}(h(x))\frac{dh}{dx}(x)$
-   * ![Chain rule](../src/image/chain-rule.png)
+   * A small change in x $\to$ A small change in the intermediate number $\to$ Nudge the change in the final value
+   * ![Chain rule](../src/image/chain-rule.png)   
       [Chain rule, 11:37](https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4)
+
+<br>
+
+## Derivatives of exponentials   
+### 1) The Euler's number e
+  - $e = 2.71828$
+  - $M(t) = e^t$
+  - Numerically: $\frac{dM}{dt}(t) =\frac{e^0.00000001 -1}{0.00000001} =e^t(1.000000000)$
+  - Geometrically: The slope of a tangent line to any point on the $e^t$ graph equals the height of that point at the horizontal axis
+  - ![e](../src/image/e.png)   
+     [Constant e, 8:52](https://www.youtube.com/watch?v=m2MIpDrF7Es&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=5)
+
+  <br>
+
+### 2) Use the chain rule for other exponential functions
+  - $2 = e^{(ln(2))}$
+  - $2^t = e^{(ln(2))t}$, the expotential function of 2
+  - $ln(2)2^t = ln(2)e^{ln(2)t}$, the derivative
