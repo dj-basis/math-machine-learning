@@ -115,7 +115,7 @@ How to calculate the area of a circle?
   - Example 1
     * $sin(x)y^2 =x$, represent a bunch of points $(x,y)$ on the curves
     * $sin(x)(2ydy) + y^2cos(x)dx = dx$ Geometrically, this means the left and the right side change must be the same to keep the points on the curves
-    * $\frac{dy}{dx} = \frac{1-y^2}{{2tan(x)}{y}}$
+    * $\frac{dy}{dx} = \frac{1-y^2}{2tan(x)y}$
     * ![multi variable](../src/image/multi-variable.png)    
       [Multi variable, 12:31](https://www.youtube.com/watch?v=qb40J4N1fa4&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=6)    
 
