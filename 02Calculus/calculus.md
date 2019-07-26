@@ -17,6 +17,7 @@ mathjax: true
 <br>
 
 ## Calculus
+  * A philosophy about concrete finitely small nudge
   ![Fathers of calculus](../src/image/fathers-calculus.png)   
   [Fathers of calculus, 1:05](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)
 
@@ -127,3 +128,40 @@ How to calculate the area of a circle?
     * $\frac{dy}{dx} = \frac{1}{x}$
     * ![multi variable](../src/image/ey.png)         
     [Multi variable 2, 14:31](https://www.youtube.com/watch?v=qb40J4N1fa4&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=6)    
+
+
+<br>
+
+## Limits, L'Hopital's rule, and epsilon delta definitions
+  - The official definition of derivative
+    * The rise-over-run slope between the starting point on the graph and the nudged point when the difference between the input and nudged input is close to 0 ($dx$)  
+    * $\frac{df}{dx}(x)=\lim_{dx\to 0}\frac{f(x+dx)-f(x)}{dx}$
+    * Replace dx with a commonly used variable h (or $\Delta x$ )
+    * $\frac{df}{dx}(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$
+
+<br>
+
+  - The epsilon delta definition
+    * The formalization of the notion of limit (one value approach to another)  
+    * Baron Augustin-Louis Cauchy first used,  Bernard Bolzano gave the definition
+    * The dependent expression f(x) approaches the value L as the variable x approaches the value c if f(x) can be made as close as desired to L by taking x sufficiently close to c.
+    * ![epsilon delta](../src/image/epsilon-delta.png)         
+    [Epsilon delta, 9:23](https://www.youtube.com/watch?v=kfF40MiS7zA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=7)    
+
+<br>
+
+  -  L'Hopital's rule
+     * Guillaume de l'Hôpital gives $ $\to$ Johann Bernoulli
+     * When you are solving a limit, and get $0/0$ or $∞/∞$, L'Hôpital's rule is the tool you need
+     * Conditions:
+       * $$\lim_{x\to c}f(x) =\lim_{x\to c}g(x) =  0
+       * $$\lim_{x\to c}f(x) =\lim_{x\to c}g(x) =  \pm \infty$$
+     * Conclusion:   
+       * $$\lim_{x\to c}\frac{f(x)}{g(x)} = \lim_{x\to c}\frac{f'(x)}{g'(x)}$$
+
+<br>
+
+---
+## References
+  * [L'Hôpital's rule introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-7/v/introduction-to-l-hopital-s-rule  
+)
