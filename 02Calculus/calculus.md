@@ -34,6 +34,7 @@ How to calculate the area of a circle?
 
 ## The paradox of the derivative
   - Derivative: to calculate the derivative at one time point (e.g. velocity), we actually need two time points (to calculate $\frac{Distance Change}{TimeChange}$)
+
   - ![Derivative](../src/image/derivative.png)  
 [Derivative, 8:16](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)  
 
@@ -42,6 +43,7 @@ How to calculate the area of a circle?
   - Make the time point interval $\to$ 0
   - The derivative as an instaneous rate of change = The best constant approximation of the rate of change
   - The slope of the line tangent to the point at t $\to$
+
   - ![Example](../src/image/derivative-example.png)    
 [Derivative example, 12:30](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)
 
@@ -51,6 +53,7 @@ How to calculate the area of a circle?
 ### 1) Sum rule: The derivative of a sum is the sum of derivatives
    * $\frac{d}{dx}(g(x)+h(x)) = \frac{dg}{dx} + \frac{dh}{dx}$
    * e.g. $\frac{d}{dx}(sin(x)+x^2 = cos(x) + 2x$
+
    * ![Sum rule](../src/image/sum-rule.png)  
 [Sum rule, 3:05](https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4)
 
@@ -70,6 +73,7 @@ How to calculate the area of a circle?
 ### 3) Function composition
    * Chain Rule: $\frac{d}{dx}g(h(x)) = \frac{dg}{dg}(h(x))\frac{dh}{dx}(x)$
    * A small change in x $\to$ A small change in the intermediate number $\to$ Nudge the change in the final value
+
    * ![Chain rule](../src/image/chain-rule.png)   
       [Chain rule, 11:37](https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4)
 
@@ -81,6 +85,7 @@ How to calculate the area of a circle?
   - $M(t) = e^t$
   - Numerically: $\frac{dM}{dt}(t) =\frac{e^0.00000001 -1}{0.00000001} =e^t(1.000000000)$
   - Geometrically: The slope of a tangent line to any point on the $e^t$ graph equals the height of that point at the horizontal axis
+
   - ![e](../src/image/e.png)   
      [Constant e, 8:52](https://www.youtube.com/watch?v=m2MIpDrF7Es&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=5)
 
@@ -99,6 +104,7 @@ How to calculate the area of a circle?
     * $x^2 + y^2 =5$ the implicit curve function
     * $2xdx + 2ydy = 0$ the implicit differentiation process. $0$ means we want $x^2 + y^2$ not change  
     * $\frac{dx}{dy} = \frac{-x}{y}$ the slope of the tangent line to the circle
+
     * ![Implicit curve](../src/image/implicit-curve.png)  
     [Implicit curve, 3:03](https://www.youtube.com/watch?v=qb40J4N1fa4&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=6)
 
@@ -107,6 +113,7 @@ How to calculate the area of a circle?
   - A related rates problem: how the rates of change for each of the values depend on each other  
   - Example
     * $x(t)^2 + y(t)^2 =5$ pythagorean theorem, x and y are functions of time, the top of the ladder $y$ is dropping at $1m/s$, find out the rate of the bottom of the ladder that is moving from the wall at the initial moment
+
     * ![Related rates](../src/image/ralted-rates.png)    
       [Related rates, 7:12](https://www.youtube.com/watch?v=qb40J4N1fa4&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=6)    
 
@@ -117,6 +124,7 @@ How to calculate the area of a circle?
     * $sin(x)y^2 =x$, represent a bunch of points $(x,y)$ on the curves
     * $sin(x)(2ydy) + y^2cos(x)dx = dx$ Geometrically, this means the left and the right side change must be the same to keep the points on the curves
     * $\frac{dy}{dx} = \frac{1-y^2}{2tan(x)y}$
+
     * ![multi variable](../src/image/multi-variable.png)    
       [Multi variable, 12:31](https://www.youtube.com/watch?v=qb40J4N1fa4&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=6)    
 
@@ -126,6 +134,7 @@ How to calculate the area of a circle?
     * $y =ln(x)$, $\frac{dy}{dx} = \frac{d(ln(x))}{dx}$  
     * $e^y =x$, $\frac{dy}{dx} = \frac{1}{x}$
     * $\frac{dy}{dx} = \frac{1}{x}$
+
     * ![multi variable](../src/image/ey.png)         
     [Multi variable 2, 14:31](https://www.youtube.com/watch?v=qb40J4N1fa4&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=6)    
 
@@ -135,9 +144,9 @@ How to calculate the area of a circle?
 ## Limits, L'Hopital's rule, and epsilon delta definitions
   - The official definition of derivative
     * The rise-over-run slope between the starting point on the graph and the nudged point when the difference between the input and nudged input is close to 0 ($dx$)  
-    * $\frac{df}{dx}(x)=\lim_{dx\to 0}\frac{f(x+dx)-f(x)}{dx}$
+    * $$\frac{df}{dx}(x)=\lim_{dx\to 0}\frac{f(x+dx)-f(x)}{dx}$$
     * Replace dx with a commonly used variable h (or $\Delta x$ )
-    * $\frac{df}{dx}(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$
+    * $$\frac{df}{dx}(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
 
 <br>
 
@@ -145,16 +154,17 @@ How to calculate the area of a circle?
     * The formalization of the notion of limit (one value approach to another)  
     * Baron Augustin-Louis Cauchy first used,  Bernard Bolzano gave the definition
     * The dependent expression f(x) approaches the value L as the variable x approaches the value c if f(x) can be made as close as desired to L by taking x sufficiently close to c.
+    
     * ![epsilon delta](../src/image/epsilon-delta.png)         
     [Epsilon delta, 9:23](https://www.youtube.com/watch?v=kfF40MiS7zA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=7)    
 
 <br>
 
   -  L'Hopital's rule
-     * Guillaume de l'Hôpital gives $ $\to$ Johann Bernoulli
+     * Johann Bernoulli $\to$ Guillaume de l'Hôpital  
      * When you are solving a limit, and get $0/0$ or $∞/∞$, L'Hôpital's rule is the tool you need
      * Conditions:
-       * $$\lim_{x\to c}f(x) =\lim_{x\to c}g(x) =  0
+       * $$\lim_{x\to c}f(x) =\lim_{x\to c}g(x) =  0$$
        * $$\lim_{x\to c}f(x) =\lim_{x\to c}g(x) =  \pm \infty$$
      * Conclusion:   
        * $$\lim_{x\to c}\frac{f(x)}{g(x)} = \lim_{x\to c}\frac{f'(x)}{g'(x)}$$
