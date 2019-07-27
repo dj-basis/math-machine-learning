@@ -12,7 +12,8 @@ mathjax: true
  - [The paradox of the derivative](#paradox)
  - [Chain rule and product rule](#chain)
  - [Derivatives of exponentials](#exponentials)
- - [Implicit differentiation](#Implicit)
+ - [Implicit differentiation](#implicit)
+ - [Limits, L'Hopital's rule, and epsilon delta definitions](#limits)
 
 <br>
 
@@ -154,7 +155,7 @@ How to calculate the area of a circle?
     * The formalization of the notion of limit (one value approach to another)  
     * Baron Augustin-Louis Cauchy first used,  Bernard Bolzano gave the definition
     * The dependent expression f(x) approaches the value L as the variable x approaches the value c if f(x) can be made as close as desired to L by taking x sufficiently close to c.
-    
+
     * ![epsilon delta](../src/image/epsilon-delta.png)         
     [Epsilon delta, 9:23](https://www.youtube.com/watch?v=kfF40MiS7zA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=7)    
 
@@ -169,6 +170,24 @@ How to calculate the area of a circle?
      * Conclusion:   
        * $$\lim_{x\to c}\frac{f(x)}{g(x)} = \lim_{x\to c}\frac{f'(x)}{g'(x)}$$
 
+<br>
+
+## Integration and the fundamental theorem of calculus
+  - Integral: the fundamental theorem of calculus
+    * the sum of a large number of small values on the continuum between the lower bound a and upper bound b
+    * Given a function $f(x)$, find  $F(x)$, the antiderivative of $f(x)$
+    * The reverse relation of derivative ($f(x)$ is the derivative of F ⟺  $f$ is an antiderivative of $f'$)
+    * Calculate he integral of $f(x)$: $\int_a^b f(x)dx = F(b) - F(a)$
+    * Each function has a family of antiderivatives (the difference between the family members is the constant $C$)
+    * Geometrically: integrals don't measure the area per se, they measure the signed area   
+    * ![Integral](../src/image/integral.png)         
+    [Integral, 15:32](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)
+
+    * ![Integral example](../src/image/integral-example.png)         
+    [Integral example, 20:25](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)  
+    
+    * ![Integral signed area](../src/image/integral-area.png)         
+    [Integral signed area, 20:45](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)  
 <br>
 
 ---
