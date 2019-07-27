@@ -162,7 +162,7 @@ How to calculate the area of a circle?
 <br>
 
   -  L'Hopital's rule
-     * Johann Bernoulli $\to$ Guillaume de l'Hôpital  
+     * Johann Bernoulli $\to$ Guillaume de l'Hôpital
      * When you are solving a limit, and get $0/0$ or $∞/∞$, L'Hôpital's rule is the tool you need
      * Conditions:
        * $$\lim_{x\to c}f(x) =\lim_{x\to c}g(x) =  0$$
@@ -174,23 +174,24 @@ How to calculate the area of a circle?
 
 ## Integration and the fundamental theorem of calculus
   - Integral: the fundamental theorem of calculus
-    * the sum of a large number of small values on the continuum between the lower bound a and upper bound b
+    * The sum of a large number of small values on the continuum between the lower bound a and upper bound b
     * Given a function $f(x)$, find  $F(x)$, the antiderivative of $f(x)$
     * The reverse relation of derivative ($f(x)$ is the derivative of F ⟺  $f$ is an antiderivative of $f'$)
     * Calculate he integral of $f(x)$: $\int_a^b f(x)dx = F(b) - F(a)$
     * Each function has a family of antiderivatives (the difference between the family members is the constant $C$)
     * Geometrically: integrals don't measure the area per se, they measure the signed area   
+
     * ![Integral](../src/image/integral.png)         
     [Integral, 15:32](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)
 
     * ![Integral example](../src/image/integral-example.png)         
     [Integral example, 20:25](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)  
-    
+
     * ![Integral signed area](../src/image/integral-area.png)         
     [Integral signed area, 20:45](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)  
 <br>
 
 ---
 ## References
-  * [L'Hôpital's rule introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-7/v/introduction-to-l-hopital-s-rule  
-)
+  * [L'Hôpital's rule introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-7/v/introduction-to-l-hopital-s-rule  )  
+  * [Antiderivatives and indefinite integrals](https://www.khanacademy.org/math/old-ap-calculus-ab/ab-antiderivatives-ftc)
