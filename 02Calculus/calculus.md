@@ -14,6 +14,7 @@ mathjax: true
  - [Derivatives of exponentials](#exponentials)
  - [Implicit differentiation](#implicit)
  - [Limits, L'Hopital's rule, and epsilon delta definitions](#limits)
+ - [Integration and the fundamental theorem of calculus](#integral)
 
 <br>
 
