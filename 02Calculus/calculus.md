@@ -15,6 +15,8 @@ mathjax: true
  - [Implicit differentiation](#implicit)
  - [Limits, L'Hopital's rule, and epsilon delta definitions](#limits)
  - [Integration and the fundamental theorem of calculus](#integral)
+ - [The average of a continuous variable](#average)
+ - [Higher order derivatives](#high-order)
 
 <br>
 
@@ -190,7 +192,23 @@ How to calculate the area of a circle?
 
     * ![Integral signed area](../src/image/integral-area.png)         
     [Integral signed area, 20:45](https://www.youtube.com/watch?v=rfG8ce4nNh0&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=8)  
+
 <br>
+
+## The average of a continuous variable
+  - Cyclic phenomenon are modelled using sin waves
+  - Example
+    - Average height = \frac{Area}{Width} = $\frac{\int_0^\pi \sin(x)dx}{\pi}$
+
+<br>
+
+## Higher order derivatives  
+
+* ![Higher-order derivative](../src/image/higher-order-derivative.png)         
+[Higher-order derivative, 5:38](https://www.youtube.com/watch?v=BLkz5LGWihw&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=10)  
+
+<br>
+
 
 ---
 ## References
