@@ -199,7 +199,7 @@ How to calculate the area of a circle?
 ## The average of a continuous variable
   - Cyclic phenomenon are modelled using sin waves
   - Example
-    - $Average height = \frac{Area}{Width} = $\frac{\int_0^\pi \sin(x)dx}{\pi}$
+    - Average height $= \frac{Area}{Width} = \frac{\int_0^\pi \sin(x)dx}{\pi}$
 
 <br>
 
@@ -214,9 +214,13 @@ How to calculate the area of a circle?
   * Scottish mathematician James Gregory and formally introduced by the English mathematician [Brook Taylor](https://en.wikipedia.org/wiki/Taylor_series)
   * Used for approximate functions: to find the polynomial functions for non-polynomial functions
   * A general nth-degree polynomial $f(x) = a_0 + a_1(x-c)+ a_2(x-c)^2 +a_3(x-c)^3+...$
+
     * Closed form: $f(x) =  	\sum_{j=0}^{\infty} a_j(x-c)^j$
-  * $f(x) = \frac{f(c)}{0!} +\frac{f'(c)}{1!}(x-c) +\frac{f''(c)}{2!}(x-c)^2 + \frac{f'''(c)}{3!}(x-c)^3+...$
+
+  * $f(x) = \frac{f(c)}{0!} +\frac{f’(c)}{1!}(x-c) +\frac{f’’(c)}{2!}(x-c)^2 + \frac{f’’’(c)}{3!}(x-c)^3+...$
+
     * Closed form: $f(x) =  	\sum_{j=0}^{\infty} \frac{f^{(j)}(c)}{j!}(x-c)^j$
+
   * Maclaurin's series: when c=0
 
 
