@@ -7,28 +7,29 @@ mathjax: true
 <br>
 
 ## Table of Contents
- - [Calculus](#calculus)
- - [Derivatives and integrals](#derivatives)
- - [The paradox of the derivative](#paradox)
- - [Chain rule and product rule](#chain)
- - [Derivatives of exponentials](#exponentials)
- - [Implicit differentiation](#implicit)
- - [Limits, L'Hopital's rule, and epsilon delta definitions](#limits)
- - [Integration and the fundamental theorem of calculus](#integral)
- - [The average of a continuous variable](#average)
- - [Higher order derivatives](#high-order)
- - [Taylor series](#taylor)
+ - [1. Calculus](#calculus)
+ - [2. Derivatives and integrals](#derivatives)
+ - [3. The paradox of the derivative](#paradox)
+ - [4. Chain rule and product rule](#chain)
+ - [5. Derivatives of exponentials](#exponentials)
+ - [6. Implicit differentiation](#implicit)
+ - [7. Limits, L'Hopital's rule, and epsilon delta definitions](#limits)
+ - [8. Integration and the fundamental theorem of calculus](#integral)
+ - [9. The average of a continuous variable](#average)
+ - [10. Higher order derivatives](#high-order)
+ - [11. Taylor series](#taylor)
+ - [12. References](#refs)
 
 <br>
 
-## Calculus
+## 1. Calculus
   * A philosophy about concrete finitely small nudge
   ![Fathers of calculus](../src/image/fathers-calculus.png)   
   [Fathers of calculus, 1:05](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=2)
 
 <br>
 
-## Derivatives and integrals
+## 2. Derivatives and integrals
 How to calculate the area of a circle?  
  * The area of a circle can be approximated to the aggregated areas of many rectangles ($2\pi rdr$, perimeter $2\pi r$ as the length*width $dr$)
 
@@ -37,7 +38,7 @@ How to calculate the area of a circle?
 
 <br>
 
-## The paradox of the derivative
+## 3. The paradox of the derivative
   - Derivative: to calculate the derivative at one time point (e.g. velocity), we actually need two time points (to calculate $\frac{Distance Change}{TimeChange}$)
 
   - ![Derivative](../src/image/derivative.png)  
@@ -54,7 +55,7 @@ How to calculate the area of a circle?
 
 <br>
 
-## Chain rule and product rule
+## 4. Chain rule and product rule
 ### 1) Sum rule: The derivative of a sum is the sum of derivatives
    * $\frac{d}{dx}(g(x)+h(x)) = \frac{dg}{dx} + \frac{dh}{dx}$
    * e.g. $\frac{d}{dx}(sin(x)+x^2 = cos(x) + 2x$
@@ -84,7 +85,7 @@ How to calculate the area of a circle?
 
 <br>
 
-## Derivatives of exponentials   
+## 5. Derivatives of exponentials   
 ### 1) The Euler's number e
   - $e = 2.71828$
   - $M(t) = e^t$
@@ -103,7 +104,7 @@ How to calculate the area of a circle?
 
 <br>
 
-## Implicit differentiation  
+## 6. Implicit differentiation  
   - Implicit curve: a plane curve defined by an implicit equation relating two coordinate variables, commonly x and y
   - Example
     * $x^2 + y^2 =5$ the implicit curve function
@@ -146,7 +147,7 @@ How to calculate the area of a circle?
 
 <br>
 
-## Limits, L'Hopital's rule, and epsilon delta definitions
+## 7. Limits, L'Hopital's rule, and epsilon delta definitions
   - The official definition of derivative
     * The rise-over-run slope between the starting point on the graph and the nudged point when the difference between the input and nudged input is close to 0 ($dx$)  
     * $$\frac{df}{dx}(x)=\lim_{dx\to 0}\frac{f(x+dx)-f(x)}{dx}$$
@@ -176,7 +177,7 @@ How to calculate the area of a circle?
 
 <br>
 
-## Integration and the fundamental theorem of calculus
+## 8. Integration and the fundamental theorem of calculus
   - Integral: the fundamental theorem of calculus
     * The sum of a large number of small values on the continuum between the lower bound a and upper bound b
     * Given a function $f(x)$, find  $F(x)$, the antiderivative of $f(x)$
@@ -196,21 +197,21 @@ How to calculate the area of a circle?
 
 <br>
 
-## The average of a continuous variable
+## 9. The average of a continuous variable
   - Cyclic phenomenon are modelled using sin waves
   - Example
     - Average height $= \frac{Area}{Width} = \frac{\int_0^\pi \sin(x)dx}{\pi}$
 
 <br>
 
-## Higher order derivatives  
+## 10. Higher order derivatives  
 
 * ![Higher-order derivative](../src/image/higher-order-derivative.png)         
 [Higher-order derivative, 5:38](https://www.youtube.com/watch?v=BLkz5LGWihw&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=10)  
 
 <br>
 
-## Taylor series
+## 11. Taylor series
   * Scottish mathematician James Gregory and formally introduced by the English mathematician [Brook Taylor](https://en.wikipedia.org/wiki/Taylor_series)
   * Used for approximate functions: to find the polynomial functions for non-polynomial functions
   * A general nth-degree polynomial $f(x) = a_0 + a_1(x-c)+ a_2(x-c)^2 +a_3(x-c)^3+...$
@@ -225,7 +226,8 @@ How to calculate the area of a circle?
 
 
 ---
-## References
+## 12. References
+  * [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
   * [L'Hôpital's rule introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-7/v/introduction-to-l-hopital-s-rule  )  
   * [Antiderivatives and indefinite integrals](https://www.khanacademy.org/math/old-ap-calculus-ab/ab-antiderivatives-ftc)
   * [Taylor & Maclaurin polynomials intro (part 1)](https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-11/v/maclaurin-and-taylor-series-intuition)
