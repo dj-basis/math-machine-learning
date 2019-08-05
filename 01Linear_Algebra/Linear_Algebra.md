@@ -169,8 +169,8 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
  * Geometrically: apply a transformation to a vector
    - Think of the columns of a matrix as transformed basis vectors $\begin{bmatrix}a \\\c \end{bmatrix}$ and $\begin{bmatrix}b \\\d \end{bmatrix}$
    - The linear trans result is the linear combination of the transformed basis vectors
-   * ![matrix-vector](../src/image/matrix-vector.png )
-  [Matrix Vector multiplication 8:00](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3)
+   * ![matrix-vector](../src/image/matrix-vector.png)  
+    [Matrix Vector multiplication 8:00](https://www.youtube.com/watch?v=kYB8IZa5AuE&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=3)
 
 <br>
 
