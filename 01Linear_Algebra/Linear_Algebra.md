@@ -274,6 +274,7 @@ A shear matrix is an elementary matrix that represents the addition of a multipl
 ---
 
 ## 14. References
+  * [Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   * [Cross product introduction](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/linear-algebra-cross-product-introduction)
   * [Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
   * [MIT Eigen](https://math.mit.edu/~gs/linearalgebra/ila0601.pdf)
