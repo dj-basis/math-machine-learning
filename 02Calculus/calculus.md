@@ -17,6 +17,7 @@ mathjax: true
  - [Integration and the fundamental theorem of calculus](#integral)
  - [The average of a continuous variable](#average)
  - [Higher order derivatives](#high-order)
+ - [Taylor series](#taylor)
 
 <br>
 
@@ -198,7 +199,7 @@ How to calculate the area of a circle?
 ## The average of a continuous variable
   - Cyclic phenomenon are modelled using sin waves
   - Example
-    - Average height = \frac{Area}{Width} = $\frac{\int_0^\pi \sin(x)dx}{\pi}$
+    - $Average height = \frac{Area}{Width} = $\frac{\int_0^\pi \sin(x)dx}{\pi}$
 
 <br>
 
@@ -209,8 +210,20 @@ How to calculate the area of a circle?
 
 <br>
 
+## Taylor series
+  * Scottish mathematician James Gregory and formally introduced by the English mathematician [Brook Taylor](https://en.wikipedia.org/wiki/Taylor_series)
+  * Used for approximate functions: to find the polynomial functions for non-polynomial functions
+  * A general nth-degree polynomial $f(x) = a_0 + a_1(x-c)+ a_2(x-c)^2 +a_3(x-c)^3+...$
+    * Closed form: $f(x) =  	\sum_{j=0}^{\infty} a_j(x-c)^j$
+  * $f(x) = \frac{f(c)}{0!} +\frac{f'(c)}{1!}(x-c) +\frac{f''(c)}{2!}(x-c)^2 + \frac{f'''(c)}{3!}(x-c)^3+...$
+    * Closed form: $f(x) =  	\sum_{j=0}^{\infty} \frac{f^{(j)}(c)}{j!}(x-c)^j$
+  * Maclaurin's series: when c=0
+
 
 ---
 ## References
   * [L'Hôpital's rule introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-7/v/introduction-to-l-hopital-s-rule  )  
   * [Antiderivatives and indefinite integrals](https://www.khanacademy.org/math/old-ap-calculus-ab/ab-antiderivatives-ftc)
+  * [Taylor & Maclaurin polynomials intro (part 1)](https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-11/v/maclaurin-and-taylor-series-intuition)
+  * [Taylor Series](https://www.mathsisfun.com/algebra/taylor-series.html)
+  * [An Easy Way to Remember the Taylor Series Expansion](https://medium.com/@andrew.chamberlain/an-easy-way-to-remember-the-taylor-series-expansion-a7c3f9101063)
