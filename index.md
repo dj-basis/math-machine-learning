@@ -16,6 +16,7 @@ mathjax: true
 
  * [Essence of Linear Algebra](https://dj-basis.github.io/math-machine-learning/01Linear_Algebra/Linear_Algebra)
  * [Essence of Calculus](https://dj-basis.github.io/math-machine-learning/02Calculus/calculus)
+ * [Probability](https://dj-basis.github.io/math-machine-learning/02Calculus/probability)
 
 
 ## More
@@ -23,3 +24,4 @@ mathjax: true
   * [A Gentle Introduction To Graph Theory](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
   * [A Data Scientist’s Guide to Data Structures & Algorithms, Part 1](https://towardsdatascience.com/a-data-scientists-guide-to-data-structures-algorithms-1176395015a0)
   * [Comprehensive & Practical Inferential Statistics Guide for data science](https://www.analyticsvidhya.com/blog/2017/01/comprehensive-practical-guide-inferential-statistics-data-science/)
+  * [Probability and statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/)
