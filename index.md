@@ -16,7 +16,7 @@ mathjax: true
 
  * [Essence of Linear Algebra](https://dj-basis.github.io/math-machine-learning/01Linear_Algebra/Linear_Algebra)
  * [Essence of Calculus](https://dj-basis.github.io/math-machine-learning/02Calculus/calculus)
- * [Probability](https://dj-basis.github.io/math-machine-learning/02Calculus/probability)
+ * [Probability](https://dj-basis.github.io/math-machine-learning/03Probability/probability)
 
 
 ## More
